@@ -35,10 +35,10 @@ Here, our goal is to create a new column called "Need Doctor", indicating whethe
 The conditions for recommending a doctor are as follows:
 
 Being 40+ years old and meeting one of the following characteristics:
-Spending more than 4 hours per day on social media
-Having 1 or fewer workouts per week
-Having an irregular or unhealthy food routine
-Sleeping less than 4 hours per night
+- Spending more than 4 hours per day on social media
+- Having 1 or fewer workouts per week
+- Having an irregular or unhealthy food routine
+- Sleeping less than 4 hours per night
 The "Need Doctor" column should be set to True if the conditions are met; otherwise, it should be set to False.
 
 To measure the efficiency of different ways to solve this task, we have defined five levels of resolution, numbered from 1 to 5, representing the least efficient to the most efficient approaches.
