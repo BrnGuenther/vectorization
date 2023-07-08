@@ -109,7 +109,7 @@ for column in ['time_on_socialmedia_per_day(hours)', 'number_of_workouts_per_wee
 ``````
 It is possible to observe the lack of performance when iterating twice, first to find the column name and then to iterate over each element of the column. The conditionals are structured in this way to avoid overwriting the result when checking two different columns, preventing the Need Doctor value from being set to True and then being overwritten by False in the next iteration.
 
-### Resultado Level 1
+### Level 1 results
 
 After applying the %%timeit functionality, which runs the code block multiple times and returns the average time and the standard deviation, we obtain the following result:
 
