@@ -2,7 +2,6 @@
 
 ## Objective and Motivation
 
-
 This project focuses on demonstrating how it is possible to perform tabular data operations in different ways, increasing their efficiency by applying vectorization and utilizing libraries that assist us in this endeavor, such as Numpy.
 
 In the process of feature engineering, new data is added to our DataFrame, often based on existing columns. So, knowing vectorization techniques can be extremely useful in increasing the efficiency of your code, especially when dealing with large numbers of rows in your DataFrame.
@@ -46,7 +45,7 @@ The "Need Doctor" column should be set to True if the conditions are met; otherw
 
 To measure the efficiency of different ways to solve this task, we have defined five levels of resolution, numbered from 1 to 5, representing the least efficient to the most efficient approaches.
 
-## Desenvolvimento
+## Development
 
 To start the study, we import the pandas and numpy libraries and create our DataFrame
 
