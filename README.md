@@ -12,8 +12,6 @@ In the process of feature engineering, new data is added to our DataFrame, often
 
 The main idea of vectorization is manipulate the entire column at once, instead of iterating each row specifically
 
-Dessa forma, você trata colunas aritmeticamente, ou seja, como vetores que interagem matematicamente entre si, visando atender a lógica da sua solução.
-
 By doing so, you treat columns arithmetically, i.e., as vectors that interact mathematically with each other, in order to meet the logic of your solution.
 
 A powerful tool that can assist us in vectorization is the Numpy library. In Numpy, element-wise operations are the default mode when an ndarray is involved. These operations are internally developed in C by Numpy, which leads to more efficient memory allocation.
@@ -22,11 +20,11 @@ A powerful tool that can assist us in vectorization is the Numpy library. In Num
 
 The dataset used for this study consists of randomly generated example data using Numpy. It includes the following columns:
 
-*age: representing the person's age
-*time_on_socialmedia_per_day(hours): time spent on social media per day in hours
-*number_of_workouts_per_week: the number of weekly workouts
-*food_routine: categorizing the person's eating habits into 5 possible categories
-*avg_time_sleeping: average sleep time
+- age: representing the person's age
+- time_on_socialmedia_per_day(hours): time spent on social media per day in hours
+- number_of_workouts_per_week: the number of weekly workouts
+- food_routine: categorizing the person's eating habits into 5 possible categories
+- avg_time_sleeping: average sleep time
 
 The initial dataset contains 10,000 rows, but we will see throughout the results that as the dataset size increases, vectorization becomes more useful and advantageous.
 
