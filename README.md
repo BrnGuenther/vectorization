@@ -139,7 +139,7 @@ def recommend_doctor2(row)
 for index, row in df.iterrows()
     df.loc[index, 'Need Doctor (2)'] = recommend_doctor2(row)
 ``````
-### Resultado Level 2
+### Level 2 results
 
 Applying %%timeit only to the iteration using the iterrows() method, our result was:
 
@@ -156,7 +156,7 @@ Level 3 uses the same recommend_doctor2 function, but now we use another pandas 
 df['Need Doctor (3)'] = df.apply(recommend_doctor2, axis = 1)
 ``````
 
-### Resultado Level 3
+### Level 3 results
 
 The obtained result was:
 
@@ -182,7 +182,7 @@ df.loc[(df['age'] = 40) &
         ), 'Need Doctor (4)'
 ] = True
 ``````
- ### Resultado level 4
+ ### Level 4 results
 
 1.57 ms ± 7.42 µs per loop (mean ± std. dev. of 7 runs, 1,000 loops each)
 
@@ -214,7 +214,7 @@ df['Need Doctor (5)'] = np.select(conditions, choices, default = False)
  ``````
 Only one condition is applied, which is a check to determine if a person should be recommended to a doctor. In this case, we assign the value True to choices, and our default parameter for the opposite case is set to False.
 
-### Level 5 Result
+### Level 5 results
 
 120 µs ± 1.08 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 
@@ -236,14 +236,14 @@ This comparison is better observed through the graphical analysis presented belo
 It is possible to observe that all levels follow a linear relationship between the time it takes for the code to run and the size of the DataFrame. We can see that using seconds in time scale, the DataFrame size is almost irrelevant for levels 4 and 5, as their slopes are very close to 90 degrees. On the other hand, levels 1 and 2 show a significant increase in time as the DataFrame size increases.
 
 
-### Figura 2
+### Figure 2
 
 ![Alt text](<graph 5.png>)
 
 Here, when comparing the speed of level 5 relative to level 1, we can see an increase in code efficiency as the dataset size grows. We can examine this behavior in more detail based on Figure 3.
 
 
-### Figura 3
+### Figure 3
 
 ![Alt text](<graph 10.png>)
 
