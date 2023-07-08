@@ -22,11 +22,11 @@ A powerful tool that can assist us in vectorization is the Numpy library. In Num
 
 The dataset used for this study consists of randomly generated example data using Numpy. It includes the following columns:
 
-age: representing the person's age
-time_on_socialmedia_per_day(hours): time spent on social media per day in hours
-number_of_workouts_per_week: the number of weekly workouts
-food_routine: categorizing the person's eating habits into 5 possible categories
-avg_time_sleeping: average sleep time
+*age: representing the person's age
+*time_on_socialmedia_per_day(hours): time spent on social media per day in hours
+*number_of_workouts_per_week: the number of weekly workouts
+*food_routine: categorizing the person's eating habits into 5 possible categories
+*avg_time_sleeping: average sleep time
 
 The initial dataset contains 10,000 rows, but we will see throughout the results that as the dataset size increases, vectorization becomes more useful and advantageous.
 
