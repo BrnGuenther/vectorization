@@ -67,7 +67,7 @@ For Level 1, we implemented two functions: one to check a person's age in our da
 
 ``````python
 def check_age(age)
-    if age  40
+    if age > 40
         return True
     else
         return False
